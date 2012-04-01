@@ -1,4 +1,7 @@
 class Category < ActiveRecord::Base
-  has_many :lists
+  include Slugifier
+
   attr_accessible :description, :name, :slug
+
+  has_many :lists
 end
