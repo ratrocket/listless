@@ -1,3 +1,5 @@
 class Item < ActiveRecord::Base
-  attr_accessible :belongs_to, :date_available, :description, :name, :slug
+  belongs_to :list
+  has_many :item_details
+  attr_accessible :date_available, :description, :name, :slug
 end

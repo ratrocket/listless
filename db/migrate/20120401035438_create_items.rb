@@ -5,10 +5,10 @@ class CreateItems < ActiveRecord::Migration
       t.string :slug
       t.text :description
       t.date :date_available
-      t.belongs_to :category
+      t.belongs_to :list
 
       t.timestamps
     end
-    add_index :items, :category_id
+    add_index :items, :list_id
   end
 end
