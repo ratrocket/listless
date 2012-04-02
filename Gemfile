@@ -21,6 +21,7 @@ end
 
 group :test, :development do
   gem 'minitest-rails'
+  #gem 'minitest-rails', git: 'git://github.com/blowmage/minitest-rails.git'
 end
 
 gem 'jquery-rails'

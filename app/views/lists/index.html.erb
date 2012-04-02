@@ -2,6 +2,10 @@
 
 <table>
   <tr>
+    <th>Name</th>
+    <th>Slug</th>
+    <th>Description</th>
+    <th>Category</th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +13,10 @@
 
 <% @lists.each do |list| %>
   <tr>
+    <td><%= list.name %></td>
+    <td><%= list.slug %></td>
+    <td><%= list.description %></td>
+    <td><%= list.category.name %></td>
     <td><%= link_to 'Show', list %></td>
     <td><%= link_to 'Edit', edit_list_path(list) %></td>
     <td><%= link_to 'Destroy', list, confirm: 'Are you sure?', method: :delete %></td>

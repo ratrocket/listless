@@ -2,7 +2,7 @@ require "minitest/autorun"
 require "minitest/rails"
 
 # Uncomment if you want awesome colorful output
-require "minitest/pride"
+#require "minitest/pride"
 
 ENV["RAILS_ENV"] = "test"
 require File.expand_path('../../config/environment', __FILE__)
@@ -50,3 +50,11 @@ end
 MiniTest::Spec.register_spec_type(MiniTest::Rails::Mailer) do |desc|
   desc.superclass == ActionMailer::Base
 end
+
+__END__
+
+https://github.com/blowmage/minitest-rails
+https://github.com/seattlerb/minitest
+https://github.com/stephencelis/miniskirt
+https://gist.github.com/307649  # context blocks
+https://gist.github.com/273587  # minidress
